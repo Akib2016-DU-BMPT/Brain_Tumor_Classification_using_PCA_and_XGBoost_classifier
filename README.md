@@ -1,1 +1,5 @@
 # Brain_Tumor_Classification_using_PCA_and_XGBoost_classifier
+The project describes how the grades of Glioblastoma are classified using XGBoost classifier model from the single slice of brain tumor MRI scans. For the image based classification 2D Convolutional Neural Network (CNN) is often considered as straight forward process but it has highly complexity and might not show high accuracy for the less contained data (image). Alternatively, our proposed model is consisted with three distinct steps that makes less complexity with better performance matrices for the grade classification. The project has three steps.
+1. First, Extracting features from each of images using resnet50 pre-trained backbone. Make sure the dataset is preprossed using data splitting with test, train and validation set
+2. The second script is written to resuce  the array of each features from the images using PCA technique
+3.  The reduced features is driven into the XGBoost classifier. Note that the label of the each sample(feature's name) is added in the tabular sheet.   
